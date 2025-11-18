@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=512&q=80",
+    "title": "Quantum Flow",
+    "companyName": "Synapse Dynamics",
+    "description": "Quantum Flow reinvents project management by utilizing **AI-driven dependency mapping** that predicts resource conflicts before they occur. It moves beyond simple Kanban to offer a holographic project view, where users can manipulate tasks in a 3D interface (optional). Critical paths are highlighted instantly. It features a unique 'Focus Score' that measures task complexity and required concentration time, helping teams optimize their sprint planning and avoid burnout. Includes full integration with Git repositories for code deployment tracking and automated release notes generation.",
+    "size": 92,
+    "reviews": 18430,
+    "ratingAvg": 4.7,
+    "downloads": 1250000,
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 360 },
+      { "name": "3 star", "count": 1520 },
+      { "name": "4 star", "count": 4030 },
+      { "name": "5 star", "count": 12310 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=512&q=80",
+    "title": "Aura Journal",
+    "companyName": "Digital Canvas Inc.",
+    "description": "Aura Journal is a revolutionary **mood tracking and mental wellness app** that uses passive biometrics (like typing speed and screen time patterns) to predict and flag impending stress peaks. It offers structured journaling prompts based on Cognitive Behavioral Therapy (CBT) principles and integrates calming ambient soundscapes. All data is encrypted locally with optional decentralized backup. The unique feature is 'Aura Insights,' which generates visually stunning data art from your emotional history, making reflection engaging and non-judgmental.",
+    "size": 64,
+    "reviews": 9230,
+    "ratingAvg": 4.5,
+    "downloads": 890000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 310 },
+      { "name": "3 star", "count": 980 },
+      { "name": "4 star", "count": 2480 },
+      { "name": "5 star", "count": 5310 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto-format&fit=crop&w=512&q=80",
+    "title": "GeoPulse Maps",
+    "companyName": "Vector Dynamics",
+    "description": "GeoPulse Maps is the ultimate **off-grid navigation and exploration tool**. It specializes in topographic maps and advanced environmental data layering, showing real-time wildfire risks, air quality, and noise pollution across urban areas. It allows users to download entire regions for **offline hiking and driving** with precision GPS lock. Community features enable local experts to drop hyper-accurate safety markers and update trail conditions instantly. Perfect for adventurers and environmental analysts.",
+    "size": 78,
+    "reviews": 14480,
+    "ratingAvg": 4.6,
+    "downloads": 1570000,
+    "ratings": [
+      { "name": "1 star", "count": 240 },
+      { "name": "2 star", "count": 420 },
+      { "name": "3 star", "count": 1390 },
+      { "name": "4 star", "count": 3640 },
+      { "name": "5 star", "count": 8790 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1622543022511-b0e515d18d42?auto=format&fit=crop&w=512&q=80",
+    "title": "CodeStream IDE",
+    "companyName": "DevOps Hub",
+    "description": "CodeStream IDE is a **cloud-native integrated development environment** optimized for collaborative coding and serverless deployments. It offers live pair-programming sessions with integrated audio/video and a full terminal emulator. Its core strength is its **AI code completion and refactoring suggestions** that learn from your entire codebase, not just the active file. Supports over 50 languages and integrates with all major cloud providers (AWS, Azure, GCP) for seamless function deployment.",
+    "size": 256,
+    "reviews": 9800,
+    "ratingAvg": 4.9,
+    "downloads": 720000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1250 },
+      { "name": "5 star", "count": 8000 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1603572863118-a681d45c92e7?auto=format&fit=crop&w=512&q=80",
+    "title": "ZenBudget",
+    "companyName": "Fiscal Fusion",
+    "description": "ZenBudget is a **minimalist personal finance manager** focused on automated budgeting and predictive spending. It connects securely to over 10,000 banks globally. Instead of manual categorization, it uses machine learning to suggest optimal savings targets and flags subscriptions you may have forgotten about. Its 'Pinch Mode' feature automatically adjusts discretionary spending limits when unexpected bills arrive. The interface is clean, free of ads, and prioritizes user privacy over data monetization.",
+    "size": 35,
+    "reviews": 25100,
+    "ratingAvg": 4.6,
+    "downloads": 2800000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 6300 },
+      { "name": "5 star", "count": 16000 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://images.unsplash.com/photo-1549488340-d98c56e21013?auto=format&fit=crop&w=512&q=80",
+    "title": "EchoLearn",
+    "companyName": "Eduverse Tech",
+    "description": "EchoLearn is an adaptive **language learning platform** that uses spaced repetition and context-aware chatbots powered by GPT-4. It doesn't just teach words; it teaches local idioms and cultural nuances through simulated real-life conversations. Its unique 'Voice Print' analysis adjusts pronunciation feedback based on your native language's common phonetic errors. Supports 15 core languages and includes a certified pathway for professional fluency exams.",
+    "size": 110,
+    "reviews": 11200,
+    "ratingAvg": 4.4,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 6000 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://images.unsplash.com/photo-1616401666687-3474328d844c?auto=format&fit=crop&w=512&q=80",
+    "title": "PixelEdit Pro",
+    "companyName": "Creative Streamline",
+    "description": "PixelEdit Pro is a **non-destructive photo and vector editing suite** optimized for mobile creators. It introduces 'Layer AI,' which intelligently separates backgrounds, shadows, and subjects into distinct layers automatically. Supports full RAW editing and integrates a vast library of royalty-free assets. It can export optimized files directly to social media platforms and includes collaboration features for remote design review and approval.",
+    "size": 320,
+    "reviews": 32000,
+    "ratingAvg": 4.8,
+    "downloads": 4100000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 8500 },
+      { "name": "5 star", "count": 20000 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://images.unsplash.com/photo-1510511105904-7a067087796a?auto=format&fit=crop&w=512&q=80",
+    "title": "SecureVault VPN",
+    "companyName": "Sentinel Security",
+    "description": "SecureVault VPN provides **military-grade, no-log privacy protection** with servers in 90+ countries. It utilizes the WireGuard protocol for fast, secure connections and includes an automatic kill switch to prevent data leaks. Its unique feature is 'Threat-Block DNS,' which filters out malware, phishing sites, and tracking cookies at the server level, ensuring a cleaner browsing experience. One subscription covers up to 10 devices.",
+    "size": 48,
+    "reviews": 45000,
+    "ratingAvg": 4.9,
+    "downloads": 6500000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 10500 },
+      { "name": "5 star", "count": 33000 }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://images.unsplash.com/photo-1528698827571-3c6b1ea8e722?auto=format&fit=crop&w=512&q=80",
+    "title": "Stellar Stream",
+    "companyName": "Media Matrix",
+    "description": "Stellar Stream is a unified **cross-platform content aggregator** for movies, shows, and live sports. It learns your viewing habits across Netflix, Hulu, Prime, and local broadcasters, offering a single, personalized 'Watch Queue.' It features **4K HDR support** and an integrated social feed allowing you to share real-time reactions with friends without leaving the player. Optimized for low-bandwidth streaming without sacrificing much quality.",
+    "size": 85,
+    "reviews": 7500,
+    "ratingAvg": 4.1,
+    "downloads": 550000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 1700 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 2000 }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://images.unsplash.com/photo-1517596856525-d9134a41f17e?auto=format&fit=crop&w=512&q=80",
+    "title": "NutriTrack AI",
+    "companyName": "Health Metrics",
+    "description": "NutriTrack AI offers effortless **meal logging and nutritional analysis** using advanced image recognition. Simply take a photo of your plate, and the AI accurately estimates calories, macros, and micro-nutrients. It integrates with smart scales and wearables to provide personalized feedback on hydration and exercise intensity. Supports specialized diets like Keto, Vegan, and Paleo with auto-generated weekly shopping lists.",
+    "size": 55,
+    "reviews": 16000,
+    "ratingAvg": 4.5,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 450 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 4500 },
+      { "name": "5 star", "count": 9000 }
+    ]
+  },
+  {
+    "id": 11,
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=512&q=80",
+    "title": "Zenith Gaming Hub",
+    "companyName": "Pixel Playground",
+    "description": "Zenith Gaming Hub is an all-in-one platform for **managing game libraries across PC, console, and mobile**. It tracks playtime, achievements, and friends' statuses in a single unified dashboard. Features include automatic game capture and clipping (with AI highlight reel generation) and a marketplace for rare in-game items secured by blockchain technology. Connects directly to Twitch and Discord for seamless community interaction.",
+    "size": 150,
+    "reviews": 5000,
+    "ratingAvg": 4.2,
+    "downloads": 400000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 1200 }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://images.unsplash.com/photo-1547721064-da6cfb335639?auto=format&fit=crop&w=512&q=80",
+    "title": "Sphere CRM",
+    "companyName": "Client Connect Solutions",
+    "description": "Sphere CRM is a **customer relationship management tool** built for small to medium-sized businesses. It automates lead capture from email, social media, and landing pages directly into a visual sales pipeline. It includes automated follow-up scheduling, basic email marketing tools, and **in-app VoIP calling** functionality. The interface is highly customizable and requires minimal setup time, making it accessible even for non-technical sales teams.",
+    "size": 75,
+    "reviews": 10500,
+    "ratingAvg": 4.7,
+    "downloads": 1100000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 6000 }
+    ]
+  }
+]
