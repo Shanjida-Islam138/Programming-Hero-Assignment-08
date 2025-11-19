@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaGooglePlay, FaApple } from 'react-icons/fa6';
 import { FaDownload, FaStar, FaCubes } from 'react-icons/fa'; 
-import AppCard from '../components/AppCard.jsx'; 
+import AppCard from '../Components/AppCard.jsx'; 
 import { getAllApps, getFeaturedApps, calculateAppStats } from '../utils/appService.js'; 
 import hero from '../assets/hero.png';
 import iconDownloads from '../assets/icon-downloads.png';
