@@ -1,16 +1,28 @@
-# React + Vite
+🦸‍♂️Hero IO: Application Marketplace
+Hero IO is a Single-Page Application (SPA) built using React to provide a feature-rich, responsive application marketplace. It allows users to discover, install, and manage applications through a curated, modern interface with advanced data visualization features.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Key Features & User Experience
+Comprehensive Catalogue: Features a dynamic app grid, integrated live search, and sorting options (e.g., sort by downloads).
 
-Currently, two official plugins are available:
+Detailed App View: Offers a full-screen view for each application, including the ability to Install/Uninstall (powered by localStorage) with instant success notifications (react-hot-toast).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Data Visualization: Incorporates a responsive rating chart using Recharts to display detailed app review breakdowns.
 
-## React Compiler
+Installation Management: A dedicated "My Installation" dashboard for managing installed apps and tracking installation history.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🧰 Technology Stack
+The application is built on modern, efficient technologies:
 
-## Expanding the ESLint configuration
+Front-end: React 19 with React Router v7.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Styling: Tailwind CSS v4 for utility-first design, enhanced with DaisyUI components.
+
+Charting: Recharts 3 for high-quality, responsive data graphics.
+
+Tooling: Vite 7 for fast development and bundling.
+
+🚀 Getting Started
+To run the project locally:
+
+npm install
+npm run dev

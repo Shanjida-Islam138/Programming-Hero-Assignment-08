@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { FaStar, FaDownload } from 'react-icons/fa';
 import { FaArrowRight } from 'react-icons/fa'; 
 
+
+
 const formatNumber = (value) =>
     new Intl.NumberFormat('en-US', { notation: 'compact', maximumFractionDigits: 1 }).format(value);
 
@@ -18,14 +20,14 @@ const AppCard = ({ app, variant = 'default', className = '' }) => {
         <Link to={`/apps/${app.id}`} className={`${cardStyles} ${className}`}>
             
             <div className="relative overflow-hidden rounded-t-xl bg-gray-200 h-40">
-                {app.image && (
+               
                     <img
                         src={app.image}
                         alt={app.title}
                         loading="lazy"
                         className="h-full w-full object-cover rounded-t-xl"
                     />
-                )}
+            
             </div>
 
             <div className="flex flex-1 flex-col justify-end p-4 space-y-2">

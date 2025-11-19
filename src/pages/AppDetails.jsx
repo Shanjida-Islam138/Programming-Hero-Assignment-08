@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { toast } from 'react-hot-toast';
 import { getAppDetailsById, installApp, isAppInstalled, formatRatingsForChart, uninstallApp } from '../utils/index.js';
-import InstallButton from '../Components/InstallButton.jsx'; 
+
+import InstallButton from '../Components/InstallButton.jsx';
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
-import { FaDownload, FaStar, FaUsers, FaArrowLeft } from 'react-icons/fa'; 
-import app_not_found_image from '../assets/App-Error.png'; 
+import { FaDownload, FaStar, FaUsers, FaArrowLeft } from 'react-icons/fa';
+import app_not_found_image from '../assets/App-Error.png';
 
 
 const formatCompactNumber = (value) =>
@@ -34,7 +35,7 @@ const AppDetails = () => {
     const [app, setApp] = useState(null);
     const [installed, setInstalled] = useState(false);
 
-   
+
     const handleNavigateBack = () => {
         if (typeof window !== 'undefined' && window.history.length > 1) {
             navigate(-1);
@@ -47,7 +48,7 @@ const AppDetails = () => {
         let isMounted = true;
         const loadApp = async () => {
             setLoading(true);
-            const result = await fetchAppById(appId);
+            const result = await getAppDetailsById(appId);
             if (!isMounted) return;
 
             if (!result) {
@@ -77,8 +78,8 @@ const AppDetails = () => {
         setInstalled(false);
         toast.success(`${app.title} removed from My Installation.`);
     };
-   
- 
+
+
     if (loading) {
         return (
             <section className="py-20 flex items-center justify-center min-h-[50vh] bg-gray-50">
@@ -87,7 +88,7 @@ const AppDetails = () => {
         );
     }
 
-   
+
     if (!app) {
         return (
             <div className="flex flex-col gap-4 items-center bg-white m-10 p-10 rounded-xl shadow-lg max-w-lg mx-auto">
@@ -104,17 +105,17 @@ const AppDetails = () => {
         );
     }
 
-    const chartData = ratingsToChartData(app.ratings ?? []);
+    const chartData = formatRatingsForChart(app.ratings ?? []).reverse();
 
     return (
         <section className="space-y-12 py-12 max-w-[1200px] mx-auto px-4 bg-gray-50 min-h-screen">
-            
-            
+
+
             <div className="space-y-6">
                 <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-xl">
                     <div className="flex flex-col gap-8 lg:flex-row">
-                        
-                        
+
+
                         <div className="relative aspect-square w-full h-auto overflow-hidden rounded-3xl lg:w-60 lg:h-60 lg:shrink-0 bg-blue-100 flex items-center justify-center p-4">
                             <img
                                 src={app.image}
@@ -122,8 +123,8 @@ const AppDetails = () => {
                                 className="h-full w-full object-contain rounded-2xl"
                             />
                         </div>
-                        
-                        
+
+
                         <div className="flex flex-1 flex-col justify-between gap-6">
                             <div className="space-y-4">
                                 <div className="space-y-1">
@@ -132,11 +133,11 @@ const AppDetails = () => {
                                         Developed By: <span className="text-blue-600 font-bold">{app.companyName}</span>
                                     </p>
                                 </div>
-                                
-                                
+
+
                                 <div className="grid gap-4 sm:grid-cols-3 pt-2">
-                                    
-                                  
+
+
                                     <div className="flex flex-col items-start gap-1 p-3 bg-blue-50 rounded-lg">
                                         <span className="flex items-center gap-1 text-sm font-semibold text-blue-600">
                                             <FaDownload aria-hidden="true" /> Downloads
@@ -145,8 +146,8 @@ const AppDetails = () => {
                                             {formatCompactNumber(app.downloads)}
                                         </span>
                                     </div>
-                                    
-                                  
+
+
                                     <div className="flex flex-col items-start gap-1 p-3 bg-amber-50 rounded-lg">
                                         <span className="flex items-center gap-1 text-sm font-semibold text-amber-600">
                                             <FaStar aria-hidden="true" /> Average Rating
@@ -155,8 +156,8 @@ const AppDetails = () => {
                                             {app.ratingAvg.toFixed(1)}
                                         </span>
                                     </div>
-                                    
-                                   
+
+
                                     <div className="flex flex-col items-start gap-1 p-3 bg-purple-50 rounded-lg">
                                         <span className="flex items-center gap-1 text-sm font-semibold text-purple-600">
                                             <FaUsers aria-hidden="true" /> Total Reviews
@@ -167,14 +168,14 @@ const AppDetails = () => {
                                     </div>
                                 </div>
                             </div>
-                            
-                           
+
+
                             <div className="flex flex-col gap-3 sm:flex-row sm:items-center pt-4">
                                 <InstallButton
                                     installed={installed}
                                     onInstall={handleInstall}
                                     label={`Install Now (${app.size} MB)`}
-                                    
+
                                     className="bg-[#00D390] text-slate-900 hover:bg-[#11e2a0] text-lg font-bold rounded-xl px-8"
                                 />
                                 {installed && (
@@ -191,56 +192,56 @@ const AppDetails = () => {
                     </div>
                 </div>
             </div>
-            
-            
+
+
             <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-xl">
                 <h3 className="text-2xl font-bold text-slate-900 mb-6">Ratings</h3>
-                
-              
+
+
                 <div className="mt-4 h-80 w-full">
                     <ResponsiveContainer width="100%" height="100%">
                         <BarChart data={chartData} layout="vertical" margin={{ left: 20 }}>
                             <CartesianGrid strokeDasharray="4 4" stroke="#e2e8f0" horizontal={false} />
-                            
-                            
-                            <XAxis 
-                                type="number" 
-                                stroke="#475569" 
+
+
+                            <XAxis
+                                type="number"
+                                stroke="#475569"
                                 tickLine={false}
                                 axisLine={false}
-                               
+
                                 tickFormatter={(value) => (value > 0 ? value.toLocaleString() : '')}
                                 domain={[0, 'auto']}
                             />
-                            
-                            
-                            <YAxis 
-                                type="category" 
-                                dataKey="name" 
-                                stroke="#475569" 
+
+
+                            <YAxis
+                                type="category"
+                                dataKey="name"
+                                stroke="#475569"
                                 tickLine={false}
                                 axisLine={false}
                             />
-                            
-                           
+
+
                             <Tooltip content={<CustomTooltip />} />
-                            
-                          
-                            <Bar 
-                                dataKey="value" 
-                                fill="#FF8811" 
-                                radius={[0, 8, 8, 0]} 
+
+
+                            <Bar
+                                dataKey="count"
+                                fill="#FF8000"
+                                radius={[0, 8, 8, 0]}
                                 barSize={20}
                             />
                         </BarChart>
                     </ResponsiveContainer>
                 </div>
             </div>
-            
-           
+
+
             <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-xl">
                 <h2 className="text-2xl font-bold text-slate-900 mb-4">Description</h2>
-               
+
                 {app.description.split('\n\n').map((paragraph, index) => (
                     <p key={index} className="mt-4 text-base text-slate-600 leading-relaxed">
                         {paragraph}

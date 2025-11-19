@@ -25,7 +25,7 @@ const Apps = () => {
         const load = async () => {
             setLoading(true);
             
-            const data = await fetchApps(); 
+            const data = await getAllApps(); 
             if (isMounted) {
                 setApps(data);
                 setLoading(false);
@@ -50,8 +50,8 @@ const Apps = () => {
         setSearchLoading(true);
         const handle = setTimeout(() => {
         
-            const searched = searchApps(apps, searchTerm);
-            const sorted = sortByDownloads(searched, sortOrder);
+            const searched = filterAppsByTitle(apps, searchTerm);
+            const sorted = sortAppsByDownloads(searched, sortOrder);
             
             setVisibleApps(sorted);
             setSearchLoading(false);
