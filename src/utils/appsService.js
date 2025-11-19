@@ -5,7 +5,6 @@ const SIMULATION_DELAY = 400;
 const waitMs = (duration = SIMULATION_DELAY) =>
   new Promise((resolve) => setTimeout(resolve, duration));
 
-
 const getAppSnapshot = () => JSON.parse(JSON.stringify(appData));
 
 

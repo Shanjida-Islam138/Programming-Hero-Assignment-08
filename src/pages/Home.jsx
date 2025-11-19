@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaGooglePlay, FaApple } from 'react-icons/fa6';
 import { FaDownload, FaStar, FaCubes } from 'react-icons/fa'; 
 import AppCard from '../Components/AppCard.jsx'; 
-import { getAllApps, getFeaturedApps, calculateAppStats } from '../utils/appService.js'; 
+import { getAllApps, getFeaturedApps, calculateAppStats } from '../utils/appsService.js'; 
 import hero from '../assets/hero.png';
 import iconDownloads from '../assets/icon-downloads.png';
 import iconRatings from '../assets/icon-ratings.png';

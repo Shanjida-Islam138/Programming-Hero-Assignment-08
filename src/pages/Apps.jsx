@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import AppCard from '../Components/AppCard.jsx';
-import { fetchApps, searchApps, sortByDownloads } from '../utils/index.js';
+import { getAllApps, filterAppsByTitle, sortAppsByDownloads } from '../utils/index.js';
 import { FaSearch } from 'react-icons/fa'; 
 import { IoIosArrowDown } from 'react-icons/io'; 
 

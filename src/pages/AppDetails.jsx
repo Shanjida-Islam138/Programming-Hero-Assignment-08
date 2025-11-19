@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { toast } from 'react-hot-toast';
-import { fetchAppById, installApp, isAppInstalled, ratingsToChartData, uninstallApp } from '../utils/index.js';
+import { getAppDetailsById, installApp, isAppInstalled, formatRatingsForChart, uninstallApp } from '../utils/index.js';
 import InstallButton from '../Components/InstallButton.jsx'; 
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import { FaDownload, FaStar, FaUsers, FaArrowLeft } from 'react-icons/fa'; 

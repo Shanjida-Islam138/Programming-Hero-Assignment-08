@@ -5,7 +5,7 @@ import { toast } from 'react-hot-toast';
 import InstalledAppCard from '../Components/InstalledAppCard.jsx'; 
 import { FaSort } from 'react-icons/fa';
 import {
-    fetchApps,
+    getAllApps,
     syncInstalledWithApps,
     uninstallApp,
 } from '../utils/index.js';
@@ -20,7 +20,7 @@ const MyInstallation = () => {
 
         const loadInstalled = async () => {
             setLoading(true);
-            const dataset = await fetchApps();
+            const dataset = await getAllApps();
             const synced = syncInstalledWithApps(dataset);
             if (!isMounted) return;
             
